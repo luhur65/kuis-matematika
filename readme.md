@@ -58,7 +58,11 @@ Alur Program :
                   Skor Salah = -3
     }
 
-4.  Jika ` User ` Berhasil Menjawab Semua Soal,
+5. Di Mode Game Sedang & Sulit Terdapat Rule Yaitu : 
+   1. Terdapat Rule Nyawa / life Chains Sebanyak `3 life`
+   2. Jika `User` Salah Menjawab Soal Sebanyak 3x maka User Otomatis Kalah Karena Nyawa yg Dia Punya Telah Habis
+
+6.  Jika ` User ` Berhasil Menjawab Semua Soal,
     Game Berakhir . 
     `user ` akan mendapatkan skor akhir
     dimana akan dikategorikan menurut total skor yg `user` peroleh selama bermain
@@ -67,11 +71,11 @@ Alur Program :
     Point Total user = 90
     Maka kategori nilai 90 adalah A
     
-5. folder utama
+7. folder utama
 
    filename : ` Main.py `
    
-6. folder function 
+8. folder function 
 
    filename : ` Game.py `
 

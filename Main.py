@@ -4,13 +4,17 @@ import Game
 # Data Mode Awal Game
 modeGame = 0
 
+print('  Welcome To Game Kuis Matematika  '.center(80,'-'))
+print(' By : Dharma Bakti Situmorang '.center(80))
+
 # Data Nama Pemain
-print('Siapa Nama Anda??')
-playerName = input()
+print('\nKita Kenalan Dulu ya , Siapa Nama Kamu??')
+playerName = input('Nama Saya Adalah : ')
 
 while modeGame != 9:
 
-    print('Selamat Bermain !!'.center(80, '-'))
+    print('\n')
+    print(' Selamat Bermain !! '.center(80, '-'))
     print('-'.center(80, '-'))
     print('Silakan Pilih Tingkat Kesulitan Permainan ??')
 
@@ -44,7 +48,7 @@ while modeGame != 9:
 
     elif modeGame == 7:
         # Data Nama Pemain
-        print('Siapa Nama Anda??')
+        print('Siapa Nama Kamu Sekarang ??')
         playerName = input()
 
 print('Good Bye!!!')

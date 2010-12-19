@@ -194,18 +194,57 @@ def modeSulit(data):
 
 
 def kategoriNilai(jmlSkor, pemain):
+    # List Ucapan 
+    # kategori > 80
+    kategoriBaik = [
+        'Kamu Orang Yg Pintar, Pertahankan!',
+        'Wah , Kamu Hebat Sekali !!',
+        'Jawaban Kamu Diatas rata-rata',
+        'Kamu Bisa Menjadi Seperti Einstein',
+        'Orang Tua Mu Bangga Punya Anak Seperti Mu',
+        'Rahasia Kamu Apa Sih , Jago Banget Matematikanya',
+        'Aku Tak Pernah Bertemu Orang Seperti mu!!, Hebat',
+        'Ajari Aku Dong!! , Kamu Pintar Sekali',
+        'Gak Ada Yang Bisa Ngalahin Kamu !!'
+    ]
+    # kategori 50 > nilai < 75
+    kategoriCukup = [
+        'Oke Lumayan Untuk Kamu',
+        'Jangan Langsung Berbangga Diri yah Ini Belum Seberapa',
+        'Aku Yakin Kamu bisa lebih baik dari ini',
+        'Dapet Nilai B , itu bagus loh',
+        'Sedikit Lagi Mencapai Keberhasilan',
+        'Tetap Semangat Yah !!',
+        'Terus Belajar & raih Kategori A'
+    ]
+    # kategori < 45
+    kategoriBuruk = [
+        'Yah , Semangat Terus Deh Buat Kamu',
+        'Ayo Kamu Pasti Bisa',
+        'Mungkin Kamu Masih Belum terbiasa ya !!',
+        'Jangan Mengganggap Diri Kamu Bodoh',
+        'Jangan Berkecil Hati Dengan Apa Yg Kamu Dapatkan Sekarang',
+        'Tetap Belajar Dan Ubah Kelemahan Menjadi Kelebihanmu',
+        'Jangan Patah Semangat Ya'
+    ]
+
+    # Pengacakan pesan kategori
+    pesanBaik = random.choice(kategoriBaik)
+    pesanCukup = random.choice(kategoriCukup)
+    pesanBuruk = random.choice(kategoriBuruk)
+
     # Total Jumlah Skor yg Diperoleh , 
     # Kategory Tingkat Kemampuan dalam Mengerjakan Soal
     if jmlSkor <= 45:
-        print('Skor Anda :', jmlSkor)
-        print('Kategori : C ==> Tingkatkan Lagi Kemampuan Kamu!!', pemain)
-        print('Terima Kasih Telah Bermain', pemain, '\n')
+        print('Skor Anda :', jmlSkor, ' ( Kategori : C )')
+        print('Quotes Untuk Anda : \n', pesanBuruk, pemain)
+       
     elif jmlSkor >= 50 and jmlSkor <= 75:
-        print('Skor Anda :', jmlSkor)
-        print('Kategori : B ==> Bagus, Tingkatkan Lagi Supaya Sempurna', pemain)
-        print('Terima Kasih Telah Bermain', pemain, '\n')
+        print('Skor Anda :', jmlSkor, ' ( Kategori : B )')
+        print('Quotes Untuk Anda : \n', pesanCukup, pemain)
+       
     elif jmlSkor >= 80:
-        print('Skor Anda :', jmlSkor)
-        print('Kategori : A ==>', pemain, 'Orang Yg Pintar, Pertahankan! ')
-        print('Terima Kasih Telah Bermain', pemain, '\n')
+        print('Skor Anda :', jmlSkor, ' ( Kategori : A )')
+        print('Quotes Untuk Anda : \n', pesanBaik, pemain)
+       
 
