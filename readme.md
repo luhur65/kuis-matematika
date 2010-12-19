@@ -1,90 +1,49 @@
-# DOCUMENTASI
+# Game Kuis Matematika 
+**Bahasa Pemrograman Python**
 
-# 1.System Requirements 
-
-untuk menjalankan kode program diatas , anda harus mengintall :
-
-`Python` : https://python.org
+Game Kuis Matematika ini Saya buat Menggunakan bahasa pemrograman **python v3.5.0**
 
 
+tools kode editor yg saya gunakan adalah **Visual Studio Code 2020**
 
-`Teks Editor` --> untuk mengubah kode program sesuai keinginan anda sendiri
+### Attention!!!
+**Program Required :**
+1. Intall python at this [Download Python](https://python.org/).
+2. Untuk Pengguna Android , Teman teman bisa menginstall apk di playstore yg dapat menjalankan program python , biasanya didalam apk tersebut sudah terdapat pemrograman python di dalamnya.
+3. Harap Periksa apakah program python anda sudah masuk kedalam enviroment system anda!
+4. Jika teman-teman sudah mengintall python nya , maka kita lanjut ke cara penggunaan oke!.
+
+**Usage for Pc/Laptop**
+1. Untuk yg memakai pc/laptop , setelah anda mengintall program python anda download repo ini , tombol downloadnya di atas sebelah kanan ada tulisan `Download Zip`
+2. Setelah di download file zipnya , ekstrak di path mana saja .
+3. Kemudian Buka file yg namanya `Main.py` . Selamat Anda Sudah Bisa Bermain!
+
+**Usage for Android**
+1. Download file zip project saya , tombol downloadnya di atas sebelah kanan ada tulisan `Download Zip`.
+2. Setelah di download file zipnya , ekstrak di path mana saja .
+3. Buka apk program python yg telah anda download dari playstore kemudian cari file `Main.py` didalam folder yg telah anda ekstrak dari zip tadi
+4. Horaaa, Anda pun sudah bermain skrng!
 
 
-Jika anda sudah menginstall semua yg diperlukan anda 
-dapat menjalankan program tersebut
-
-
-# 2.System Alur Program Game Kuis Matematika
-
-""" 
-Alur Program :
-1.  `user` Menginput nama terlebih dahulu , agar bisa bermain
-
-1.  `user` Memilih Tingkat Kesulitan Kuis 
-
-    { 
-    
-        Mudah, Sedang, Sulit
-       
-    }
-    
-
-2.  Jumlah Soal Disetiap Tingkat Permainan:
-
-    
-    {
-        
-        10 Soal ==> tingkat Mudah
-        20 Soal ==> tingkat Sedang
-        25 Soal ==> tingkat Sulit
-        
-    
-    }
-
-2.  kemudian `user` Menjawab Soal Yg Diberikan `Comp` Secara Acak 
-    Menurut Tingkat Kesulitan Kuis
-
-3.  Jika `User` Menjawab Benar Maka `User` mendapatkan point jawaban benar sesuai tingkat permainan , 
-    {
-        
-        Mudah ==> Skor Benar = +10
-                  Skor Salah = 0
-        
-        Sedang ==> Skor Benar = +5
-                   Skor Salah = -3
-        
-        Sulit ==> Skor Benar = +4
-                  Skor Salah = -3
-    }
-
-5. Di Mode Game Sedang & Sulit Terdapat Rule Yaitu : 
-   1. Terdapat Rule Nyawa / life Chains Sebanyak `3 life`
-   2. Jika `User` Salah Menjawab Soal Sebanyak 3x maka User Otomatis Kalah Karena Nyawa yg Dia Punya Telah Habis
-
-6.  Jika ` User ` Berhasil Menjawab Semua Soal,
-    Game Berakhir . 
-    `user ` akan mendapatkan skor akhir
-    dimana akan dikategorikan menurut total skor yg `user` peroleh selama bermain
-    Contoh :
-
-    Point Total user = 90
-    Maka kategori nilai 90 adalah A
-    
-7. folder utama
-
-   filename : ` Main.py `
+## Permainan Kuis & rules-nya
+1. Pertama kali bermain , `user` akan disuruh `menginput nama nya`.
    
-8. folder function 
+2. Setelah itu `user` akan `memilih mode game` untuk permainan kuis matematikanya , beberapa mode itu , antara lain :
+   1. **`Game Mode Mudah`** ==> user menjawab pertanyaan yg diberikan `comp` dengan tipe soal yg `mudah` , Hanya Terdapat `[ Penjumlahan ( + ) ]` , 
+   
+   2. **`Game Mode Sedang`** ===> disini `use`r akan `menjawab` soal bertipe `menengah` , di mode ini `user` diberi `life` / `nyawa` dalam bermain , rule nya :
+      1. Jika `user` salah menjawab soal , maka nyawa user akan berkurang.
+      2. Jika `user` salah menjawab soal , maka `point`/`skor` `user` berkurang .
+   
+   3. **`Game Mode Sulit`** ===> `user` akan menjawab soal dengan `tipe sulit` , sama halnya dengan `game mode sedang` `nyawa user` akan berkurang jika `user` salah menjawab soal.
+   
+   4. **`Game Mode Advanced`** ===> `user` akan diberi soal yg tak terbaatas , tujuanya adalah untuk mengumpulkan `point / skor` sebanyak-banyaknya , dan `permainan berhenti` jika `user` salah menjawab soal sebanyak `3x`.
+   
+3. Di  `akhir Permainan` , setelah `user` selesai , `user` akan mendapatkan `total skornya` yg telah didapatkan kemudian di `kategorikan` menurut banyak skornya dan akan menerima `quotes` sesuai kategori yg didapat oleh `user`.  
 
-   filename : ` Game.py `
 
-"""
+Halo , teman-teman! Game ini saya buat untuk kesenangan / hiburan kepada teman2 sekalian ,
+jika teman-teman menyukai project saya ini , jangan lupa dikasih bintang 
+atau jika teman-teman ingin berkontributor / kerja team dengan saya mengembangkan project ini , saya persilakan , Sekian dari saya . Terima kasih
 
-My Social Media : 
-
-Facebook : https://free.facebook.com/adiknya.situmorang
-
-Instagram : https://www.instagram.com/dharma_situmorang/
-
-# Selamat Bermain , Salam Python !!!!
+**Sampai jumpa di project python saya yg lainnya**

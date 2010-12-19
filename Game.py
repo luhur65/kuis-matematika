@@ -1,6 +1,7 @@
 # Eksekusi Program
 # Mengimport module/library random
 from operator import *
+from datetime import *
 import random
 
 # Mode Game Mudah
@@ -27,10 +28,9 @@ def modeMudah(data):
         
         # Soal Mudah ( penjumlahan )
         soal = add(angka1, angka2)
-        # print(soal)
-        print(intSoal,'.Hasil Dari : ', angka1, '+', angka2)
+        print('{}. Hasil Dari {} + {} ??'.format(intSoal, angka1, angka2))
 
-        print(soal)
+        # print(soal)
         answer = input('Answer : ')
 
         try:
@@ -39,16 +39,16 @@ def modeMudah(data):
                 jwbnBenar = 10
 
                 currentSkor += jwbnBenar
-                print('\nSkor Saya: ', currentSkor)
-                print('---Jawaban Anda Benar ----\n')
+                print('\n---Jawaban Anda Benar ----')
+                print('Skor Saya: {}\n'.format(currentSkor))
             
             elif int(answer) != soal:
                 # Memberikan Koreksi Jwbn Yg benar
-                print('\nJawaban Yang Benar : ', soal)
-                print('---- Jawaban Anda Salah ---- \n')
+                print('\n---- Jawaban Anda Salah ---- ')
+                print('Jawaban Yang Benar : {}\n'.format(soal))
         
         except Exception as err:
-            err = 'Jawaban Tidak Dikenali!'
+            err = '\nJawaban Tidak Dikenali!\n'
             print(err)
 
     # Kategori Nilai Akhir
@@ -64,7 +64,7 @@ def modeSedang(data):
     # Nyawa / Kesempatan Player Salah Menjawab
     life = 3
 
-    print('\nAnda Mempunyai : 3 Nyawa , Jika Salah Menjawab Nyawa Anda Berkurang!!\n')
+    print('Anda Mempunyai : 3 Nyawa , Jika Salah Menjawab Nyawa Anda Berkurang!!\n')
 
     for jmlSoal in range(1,21):
         # Mencetak no soal 
@@ -80,11 +80,11 @@ def modeSedang(data):
         
         if listMtk == 1:
             soal = add(angka1, angka2)
-            print(intSoal,'.Hasil Dari: ', angka1 ,'+', angka2)
+            print('{}. Hasil Dari {} + {} ??'.format(intSoal, angka1, angka2))
 
         elif listMtk == 2:
             soal = sub(angka1, angka2)
-            print(intSoal,'.Hasil Dari: ', angka1 ,'-', angka2)
+            print('{}. Hasil Dari {} - {} ??'.format(intSoal, angka1, angka2))
 
          # Jawaban User
         answer = input('Answer : ')
@@ -95,8 +95,8 @@ def modeSedang(data):
                 jwbnBenar = 5
 
                 currentSkor += jwbnBenar
-                print('\nSkor Saya: ', currentSkor)
-                print('---Jawaban Anda Benar ----\n')
+                print('\n---Jawaban Anda Benar ---')
+                print('Skor Saya : {}\n'.format(currentSkor))
             
             elif int(answer) != soal:
                 # Skor Jawaban Yg Salah 
@@ -107,10 +107,10 @@ def modeSedang(data):
                 # Nyawa Akan Berkurang Jika Salah Menjawab Pertanyaan
                 life -= 1
 
-                print('\nJawaban Yang Benar : ', soal)
-                print('Nyawa Anda : ', life, 'Kesempatan')
-                print('Skor Saya: ', currentSkor)
-                print('---- Jawaban Anda Salah ---- \n')
+                print('\n---- Jawaban Anda Salah ----')
+                print('Jawaban Yang Benar : {}'.format(soal))
+                print('Skor Saya : {}'.format(currentSkor))
+                print('Nyawa Anda : {} life\n'.format(life))
 
                 # Permainan Berakhir Jika Nyawa / Kesempatan Salah Menjawab Sudah Habis
                 if life == 0:
@@ -118,7 +118,7 @@ def modeSedang(data):
                     break
             
         except Exception as err:
-            err = 'Jawaban Tidak Dikenali!'
+            err = '\nJawaban Tidak Dikenali!\n'
             print(err)
 
     # Kategori Nilai Akhir
@@ -134,7 +134,7 @@ def modeSulit(data):
     # Nyawa / Kesempatan Player Salah Menjawab
     life = 3
 
-    print('\nAnda Mempunyai : 3 Nyawa , Jika Salah Menjawab Nyawa Anda Berkurang!!\n')
+    print('Anda Mempunyai : 3 Nyawa , Jika Salah Menjawab Nyawa Anda Berkurang!!\n')
 
     for jmlSoal in range(1,26):
         # Mencetak no soal 
@@ -154,23 +154,23 @@ def modeSulit(data):
 
         if listMtk == 1:
             soal = (sub(angka1, angka3)) * add(angka4, angka2)
-            print(intSoal,'.Hasil Dari: ', '(', angka1 ,'-', angka3, ') *', angka4, '+', angka2)
+            print('{}. Hasil Dari ( {} - {} ) *  {} + {} '.format(intSoal, angka1, angka3, angka4, angka2))
 
         elif listMtk == 2:
             soal = sub(angka1, angka2)
-            print(intSoal,'.Hasil Dari: ', angka1 ,'-', angka2)
+            print('{}. Hasil Dari {} - {} ??'.format(intSoal, angka1, angka2))
 
         elif listMtk == 3:
             soal = mul(angka1, angka2)
-            print(intSoal,'.Hasil Dari: ', angka1 ,'*', angka2)
+            print('{}. Hasil Dari {} * {} ??'.format(intSoal, angka1, angka2))
 
         elif listMtk == 4:
             # Soal Operasi Matematika Campuran
             soal = mul(angka4, angka1) - ( add(angka2, angka3) )
-            print(intSoal,'.Hasil Dari: ', angka4, '*', angka1, '- (', angka2, '+', angka3, ')')
+            print('{}. Hasil Dari  {} * {}  - ( {} + {} )'.format(intSoal, angka4, angka1, angka2, angka3))
 
         # jawaban user
-        print(soal)
+        # print(soal)
         answer = input('Answer: ')
 
         try:
@@ -179,7 +179,7 @@ def modeSulit(data):
                 jwbnBenar = 4
 
                 currentSkor += jwbnBenar
-                print('\nSkor Saya: ', currentSkor)
+                print('\nSkor Saya: {}'.format(currentSkor))
                 print('---Jawaban Anda Benar ----\n')
             
             elif int(answer) != soal:
@@ -191,10 +191,10 @@ def modeSulit(data):
                 # Nyawa Akan Berkurang Jika Salah Menjawab Pertanyaan
                 life -= 1
 
-                print('\nJawaban Yang Benar : ', soal)
-                print('Nyawa Anda : ', life, 'Kesempatan')
-                print('Skor Saya: ', currentSkor)
-                print('---- Jawaban Anda Salah ---- \n')
+                print('\n---- Jawaban Anda Salah ----')
+                print('Jawaban Yang Benar : {}'.format(soal))
+                print('Skor Saya: {}'.format(currentSkor))
+                print('Nyawa Anda : {} life\n'.format(life))
 
                 # Permainan Berakhir Jika Nyawa / Kesempatan Salah Menjawab Sudah Habis
                 if life == 0:
@@ -202,12 +202,86 @@ def modeSulit(data):
                     break
             
         except Exception as err:
-            err = 'Jawaban Tidak Dikenali!'
+            err = '\nJawaban Tidak Dikenali!\n'
             print(err)
     
     # Kategori Nilai Akhir
     kategoriNilai(currentSkor,data)
 
+
+def advancedMode(pemain):
+    # nyawa user == 3
+    life = 3
+    # Total Skor
+    skor= 0
+    # no soal
+    noSoal = 0
+
+    for i in range(1,500):
+
+        noSoal += 1
+
+        # angka random buat soal kuis
+        angka1 = random.randint(1, 20)
+        angka2 = random.randint(21, 40)
+        angka3 = random.randint(41, 60)
+        angka4 = random.randint(61, 100)
+
+        # random acak buat nentuin soal yg muncul
+        pilihSoal = random.randint(1, 5)
+
+        # Membuat pilihSoal
+        if pilihSoal == 1:
+            soal = add(angka1, angka2)
+            print('{}. Hasil Dari {} + {} ??'.format(noSoal, angka1, angka2))
+        elif pilihSoal == 2:
+            soal = sub(angka1, angka2)
+            print('{}. Hasil Dari {} - {} ??'.format(noSoal, angka1, angka2))
+        elif pilihSoal == 3:
+            soal = mul(angka3, angka4)
+            print('{}. Hasil Dari {} * {} ??'.format(noSoal, angka3, angka4))
+        elif pilihSoal == 4:
+            soal = angka4 * ( angka3 + angka1 - angka2) * angka4
+            print('{}. Hasil Dari {} * ( {} + {} - {} ) * {} ??'.format(noSoal, angka4, angka3, angka1, angka2, angka4))
+
+        # jawaban user
+        try:
+            print(soal)
+            answer = int(input('Jawaban Anda :\t'))
+
+            # jika jawaban benar 
+            if answer == soal:
+                skor += 10
+
+                print('\n---Jawaban Benar!---')
+                print('Skor Mu = {}'.format(skor))
+                print('Nyawa Anda = {} Life \n'.format(life))
+
+                # jika user bisa mencapai soal ke 500
+                if noSoal == 500 and life == 3:
+                    print('\n-----Congratulation For You!----')
+                    print('--------------------------------')
+                    print('Skor Kamu Berjumlah => {}'.format(skor))
+                    break
+
+            # jika jawaban salah
+            elif answer != soal:
+                skor -= 5
+                life -= 1
+
+                print('\n---Jawaban Salah!---')
+                print('Jawaban Benarnya = {}'.format(soal))
+                print('Nyawa Anda = {} Life\n'.format(life))
+
+                # cek nyawa pemain
+                if life == 0:
+                    print('Permainan Habis!, Nyawa Anda Tidak Ada Lagi!')
+                    print('Skor yg Anda Peroleh = {} Point\n'.format(skor))
+                    break
+
+        except Exception as err:
+            print(err)
+    
 
 def kategoriNilai(jmlSkor, pemain):
     # List Ucapan 
