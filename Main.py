@@ -8,8 +8,8 @@ print('  Welcome To Game Kuis Matematika  '.center(80,'-'))
 print(' By : Dharma Bakti Situmorang '.center(80))
 
 # Data Nama Pemain
-print('\nKita Kenalan Dulu ya , Siapa Nama Kamu??')
-playerName = input('Nama Saya Adalah : ')
+print('\nSiapa Nama Kamu??')
+playerName = input()
 
 while modeGame != 9:
 
@@ -36,14 +36,17 @@ while modeGame != 9:
     
     if modeGame == 1:
         # User Meminta Mode Mudah
+        print('Anda Memilih Tingkat Mudah, Jawab Semua Soal\n')
         Game.modeMudah(playerName)
 
     elif modeGame == 2:
         # User Meminta Mode Sedang
+        print('Anda Memilih Tingkat Sedang/Normal, Jawab Semua Soal')
         Game.modeSedang(playerName)
 
     elif modeGame == 3:
         # User Meminta Mode Sulit
+        print('Anda Memilih Tingkat Sulit, Jawab Semua Soal')
         Game.modeSulit(playerName)
 
     elif modeGame == 7:
