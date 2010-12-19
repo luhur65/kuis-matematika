@@ -1,15 +1,15 @@
-# System
+# import file game.py
 import Game
 
 # Data Mode Awal Game
 modeGame = 0
 
-# print('  Welcome To Game Kuis Matematika  '.center(80,'-'))
-# print(' By : Dharma Bakti Situmorang '.center(80))
+print('  Welcome To Game Kuis Matematika  '.center(80,'-'))
+print(' By : Dharma Bakti Situmorang '.center(80))
 
 # Data Nama Pemain
-# print('\nSiapa Nama Kamu??')
-playerName = "Dharma Bakti Situmorang"
+print('\nSiapa Nama Kamu??')
+playerName = input() # atau kamu bisa langsung mengisikan namamu disini dengan menggantikan input() dangan nama mu
 
 while modeGame != 9:
 
@@ -56,7 +56,7 @@ while modeGame != 9:
         Game.advancedMode(playerName)
 
     elif modeGame == 7:
-        # Data Nama Pemain
+        # user ingin mengubah namanya 
         print('Siapa Nama Kamu Sekarang ??')
         playerName = input()
 
