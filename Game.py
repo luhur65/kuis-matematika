@@ -1,6 +1,6 @@
 # Eksekusi Program
 # Mengimport module/library random
-
+from operator import *
 import random
 
 # Mode Game Mudah
@@ -19,17 +19,18 @@ def modeMudah(data):
 
         # Mencetak no soal 
         currentSoal = 1
-        intSoal = intSoal + currentSoal
+        intSoal += currentSoal
 
         # Angka Random
         angka1 = random.randint(1,25)
         angka2 = random.randint(1,25)
         
         # Soal Mudah ( penjumlahan )
-        soal = angka1 + angka2
+        soal = add(angka1, angka2)
         # print(soal)
         print(intSoal,'.Hasil Dari : ', angka1, '+', angka2)
 
+        print(soal)
         answer = input('Answer : ')
 
         try:
@@ -68,7 +69,7 @@ def modeSedang(data):
     for jmlSoal in range(1,21):
         # Mencetak no soal 
         currentSoal = 1
-        intSoal = intSoal + currentSoal
+        intSoal += currentSoal
 
         # Angka Random
         angka1 = random.randint(1,50)
@@ -78,11 +79,11 @@ def modeSedang(data):
         listMtk = random.randint(1,2)
         
         if listMtk == 1:
-            soal = angka1 + angka2
+            soal = add(angka1, angka2)
             print(intSoal,'.Hasil Dari: ', angka1 ,'+', angka2)
 
         elif listMtk == 2:
-            soal = angka1 - angka2
+            soal = sub(angka1, angka2)
             print(intSoal,'.Hasil Dari: ', angka1 ,'-', angka2)
 
          # Jawaban User
@@ -138,7 +139,7 @@ def modeSulit(data):
     for jmlSoal in range(1,26):
         # Mencetak no soal 
         currentSoal = 1
-        intSoal = intSoal + currentSoal
+        intSoal += currentSoal
 
         # Angka Random Utama untuk Penjumlahan, Pengurangan, Perkalian
         angka1 = random.randint(1,100)
@@ -148,31 +149,32 @@ def modeSulit(data):
         angka3 = random.randint(1,50)
         angka4 = random.randint(1,25)
 
-        # Operasi Matematika
+        # Operasi Matematika untuk menentukan soal operasi mana yg keluar
         listMtk = random.randint(1,4)
 
         if listMtk == 1:
-            soal = (angka1 - angka3) * angka4 + angka2
+            soal = (sub(angka1, angka3)) * add(angka4, angka2)
             print(intSoal,'.Hasil Dari: ', '(', angka1 ,'-', angka3, ') *', angka4, '+', angka2)
 
         elif listMtk == 2:
-            soal = angka1 - angka2
+            soal = sub(angka1, angka2)
             print(intSoal,'.Hasil Dari: ', angka1 ,'-', angka2)
 
         elif listMtk == 3:
-            soal = angka1 * angka2
+            soal = mul(angka1, angka2)
             print(intSoal,'.Hasil Dari: ', angka1 ,'*', angka2)
 
         elif listMtk == 4:
             # Soal Operasi Matematika Campuran
-            soal = angka4 * angka1 - ( angka2 + angka3 )
+            soal = mul(angka4, angka1) - ( add(angka2, angka3) )
             print(intSoal,'.Hasil Dari: ', angka4, '*', angka1, '- (', angka2, '+', angka3, ')')
 
         # jawaban user
+        print(soal)
         answer = input('Answer: ')
 
         try:
-            if answer == soal:
+            if int(answer) == soal:
             # Skor Jawaban yg Benar
                 jwbnBenar = 4
 
@@ -180,7 +182,7 @@ def modeSulit(data):
                 print('\nSkor Saya: ', currentSkor)
                 print('---Jawaban Anda Benar ----\n')
             
-            elif answer != soal:
+            elif int(answer) != soal:
                 # Skor Jawaban Yg Salah 
                 # Dikurangi
                 jwbnSalah = 3
