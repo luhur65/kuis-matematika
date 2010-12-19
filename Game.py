@@ -1,7 +1,9 @@
-# Eksekusi Program
-# Mengimport module/library random
+# Ini File Game.py yg berisi function setiap tingkat game kuis
+
+# mengimport module operand
 from operator import *
-from datetime import *
+
+# Mengimport module/library random
 import random
 
 # Mode Game Mudah
