@@ -21,8 +21,13 @@ while modeGame != 9:
 
     print('9. Keluar')
 
-    # user memilih 
-    modeGame = int(input())
+    try:
+        # user memilih 
+        modeGame = int(input())
+
+    except ValueError:
+        print('Masukkan Angka Saja!!')
+        print('Pilih Hanya Kategori Diatas Saja\n')
     
     if modeGame == 1:
         # User Meminta Mode Mudah
@@ -35,9 +40,5 @@ while modeGame != 9:
     elif modeGame == 3:
         # User Meminta Mode Sulit
         Game.modeSulit(playerName)
-
-    else:
-        print('Mode Yg Anda Pilih Tidak Ada!')
-        print('Pilih Mode Yg Ada! \n')
 
 print('Good Bye!!!')
