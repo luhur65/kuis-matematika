@@ -39,7 +39,11 @@ tools kode editor yg saya gunakan adalah **Visual Studio Code 2020**
    
    4. **`Game Mode Advanced`** ===> `user` akan diberi soal yg tak terbaatas , tujuanya adalah untuk mengumpulkan `point / skor` sebanyak-banyaknya , dan `permainan berhenti` jika `user` salah menjawab soal sebanyak `3x`.
    
-3. Di  `akhir Permainan` , setelah `user` selesai , `user` akan mendapatkan `total skornya` yg telah didapatkan kemudian di `kategorikan` menurut banyak skornya dan akan menerima `quotes` sesuai kategori yg didapat oleh `user`.  
+3. Di  `akhir Permainan` , setelah `user` selesai , `user` akan mendapatkan `total skornya` yg telah didapatkan kemudian di `kategorikan` menurut banyak skornya dan akan menerima `quotes` sesuai kategori yg didapat oleh `user`.
+
+
+#### Note:
+1. Ketika user mulai permainan dan mulai menjawab soal , kemudian user menekan tombol enter 2x secara cepat maka soal nya ada yg terlewat!.
 
 
 Halo , teman-teman! Game ini saya buat untuk kesenangan / hiburan kepada teman2 sekalian ,
