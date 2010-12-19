@@ -4,22 +4,23 @@ import Game
 # Data Mode Awal Game
 modeGame = 0
 
-while modeGame != 9:
+# Data Nama Pemain
+print('Siapa Nama Anda??')
+playerName = input()
 
-    # Data Nama Pemain
-    print('Siapa Nama Anda??')
-    playerName = input()
+while modeGame != 9:
 
     print('Selamat Bermain !!'.center(80, '-'))
     print('-'.center(80, '-'))
     print('Silakan Pilih Tingkat Kesulitan Permainan ??')
 
     # Membuat List Mode Game
-    print('1. Mudah')
-    print('2. Sedang')
-    print('3. Sulit \n')
+    print('(1) Mudah')
+    print('(2) Sedang')
+    print('(3) Sulit \n')
 
-    print('9. Keluar')
+    print('[7] Ganti Nama Pemain')
+    print('[9] Keluar')
 
     try:
         # user memilih 
@@ -40,5 +41,10 @@ while modeGame != 9:
     elif modeGame == 3:
         # User Meminta Mode Sulit
         Game.modeSulit(playerName)
+
+    elif modeGame == 7:
+        # Data Nama Pemain
+        print('Siapa Nama Anda??')
+        playerName = input()
 
 print('Good Bye!!!')

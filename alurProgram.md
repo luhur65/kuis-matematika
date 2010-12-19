@@ -15,7 +15,7 @@ Alur Program :
     Menurut Tingkat Kesulitan Kuis
 
 3.  Jika `User` Menjawab Benar Maka `User` mendapatkan point jawaban benar sesuai tingkat permainan , 
-    {
+    
         Mudah ==> Skor Benar = +10
                   Skor Salah = 0
         
@@ -24,7 +24,6 @@ Alur Program :
         
         Sulit ==> Skor Benar = +4
                   Skor Salah = -3
-    }
 
 4.  Jika User Berhasil Menjawab Semua Soal,
     Game Berakhir . 
