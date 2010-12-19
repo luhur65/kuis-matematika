@@ -130,6 +130,11 @@ def modeSulit(data):
     currentSkor = 0
     intSoal = 0
 
+    # Nyawa / Kesempatan Player Salah Menjawab
+    life = 3
+
+    print('\nAnda Mempunyai : 3 Nyawa , Jika Salah Menjawab Nyawa Anda Berkurang!!\n')
+
     for jmlSoal in range(1,26):
         # Mencetak no soal 
         currentSoal = 1
@@ -179,11 +184,20 @@ def modeSulit(data):
                 # Skor Jawaban Yg Salah 
                 # Dikurangi
                 jwbnSalah = 3
-
                 currentSkor -= jwbnSalah
+
+                # Nyawa Akan Berkurang Jika Salah Menjawab Pertanyaan
+                life -= 1
+
                 print('\nJawaban Yang Benar : ', soal)
-                print('\nSkor Saya: ', currentSkor)
+                print('Nyawa Anda : ', life, 'Kesempatan')
+                print('Skor Saya: ', currentSkor)
                 print('---- Jawaban Anda Salah ---- \n')
+
+                # Permainan Berakhir Jika Nyawa / Kesempatan Salah Menjawab Sudah Habis
+                if life == 0:
+                    print('Game Over , Anda Sudah Salah 3x Menjawab!!\n')
+                    break
             
         except Exception as err:
             err = 'Jawaban Tidak Dikenali!'
