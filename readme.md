@@ -29,13 +29,13 @@ tools kode editor yg saya gunakan adalah **Visual Studio Code 2020**
 1. Pertama kali bermain , `user` akan disuruh `menginput nama nya`.
    
 2. Setelah itu `user` akan `memilih mode game` untuk permainan kuis matematikanya , beberapa mode itu , antara lain :
-   1. **`Game Mode Mudah`** ==> user menjawab pertanyaan yg diberikan `comp` dengan tipe soal yg `mudah` , Hanya Terdapat `[ Penjumlahan ( + ) ]` , 
+   1. **`Game Mode Mudah`** ==> user menjawab pertanyaan yg diberikan `comp` dengan tipe soal yg `mudah` , Hanya Terdapat `[ Penjumlahan ( + ) ]` , jumlah soal terdapat `10 soal`
    
-   2. **`Game Mode Sedang`** ===> disini `use`r akan `menjawab` soal bertipe `menengah` , di mode ini `user` diberi `life` / `nyawa` dalam bermain , rule nya :
+   2. **`Game Mode Sedang`** ===> disini `use`r akan `menjawab` soal bertipe `menengah` , di mode ini `user` diberi `life` / `nyawa` dalam bermain dan terdapat `20 soal` , rule nya :
       1. Jika `user` salah menjawab soal , maka nyawa user akan berkurang.
       2. Jika `user` salah menjawab soal , maka `point`/`skor` `user` berkurang .
    
-   3. **`Game Mode Sulit`** ===> `user` akan menjawab soal dengan `tipe sulit` , sama halnya dengan `game mode sedang` `nyawa user` akan berkurang jika `user` salah menjawab soal.
+   3. **`Game Mode Sulit`** ===> `user` akan menjawab soal dengan `tipe sulit` , sama halnya dengan `game mode sedang` `nyawa user` akan berkurang jika `user` salah menjawab soal tetatpi jumlah soal di mode ini sebanyak `25 soal`.
    
    4. **`Game Mode Advanced`** ===> `user` akan diberi soal yg tak terbaatas , tujuanya adalah untuk mengumpulkan `point / skor` sebanyak-banyaknya , dan `permainan berhenti` jika `user` salah menjawab soal sebanyak `3x`.
    
@@ -45,5 +45,9 @@ tools kode editor yg saya gunakan adalah **Visual Studio Code 2020**
 Halo , teman-teman! Game ini saya buat untuk kesenangan / hiburan kepada teman2 sekalian ,
 jika teman-teman menyukai project saya ini , jangan lupa dikasih bintang 
 atau jika teman-teman ingin berkontributor / kerja team dengan saya mengembangkan project ini , saya persilakan , Sekian dari saya . Terima kasih
+
+**My Social Media :**
+[Facebook](https://free.facebook.com/adiknya.situmorang)
+[Instagram](https://www.instagram.com/dharma_situmorang/)
 
 **Sampai jumpa di project python saya yg lainnya**
