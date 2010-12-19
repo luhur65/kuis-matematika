@@ -19,7 +19,7 @@ dapat menjalankan program tersebut
 
 """ 
 Alur Program :
-1.  `user` Mwnginput nama terlebih dahulu , agar bisa bermain
+1.  `user` Menginput nama terlebih dahulu , agar bisa bermain
 
 1.  `user` Memilih Tingkat Kesulitan Kuis 
 
