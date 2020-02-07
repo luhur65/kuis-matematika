@@ -41,10 +41,10 @@ Alur Program :
                   Skor Salah = -3
     }
 
-4.  Jika User Berhasil Menjawab Semua Soal,
+4.  Jika ` User ` Berhasil Menjawab Semua Soal,
     Game Berakhir . 
-    user akan mendapatkan skor akhir
-    dimana akan dikategorikan menurut total skor yg user peroleh selama bermain
+    `user ` akan mendapatkan skor akhir
+    dimana akan dikategorikan menurut total skor yg `user` peroleh selama bermain
     Contoh :
 
     Point Total user = 90
