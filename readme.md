@@ -7,7 +7,7 @@ Alur Program :
 
     { 
     
-       Mudah, Sedang, Sulit
+        Mudah, Sedang, Sulit
        
     }
     
