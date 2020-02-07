@@ -7,6 +7,7 @@ Alur Program :
     { Mudah, Sedang, Sulit }
 
 2.  Jumlah Soal Disetiap Tingkat Permainan:
+
     {
         10 Soal ==> tingkat Mudah
         20 Soal ==> tingkat Sedang
