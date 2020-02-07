@@ -37,5 +37,8 @@ Alur Program :
 
     Point Total user = 90
     Maka kategori nilai 90 adalah A
+    
+5. folder utama 
+   filename : ` Main.py `
 
 """
