@@ -1,3 +1,17 @@
+# DOCUMENTASI
+
+# 1.System Requirements 
+
+untuk menjalankan kode program diatas , anda harus mengintall :
+
+`Python` : https://python.org
+`Teks Editor` --> untuk mengubah kode program sesuai keinginan anda sendiri
+
+
+Jika anda sudah menginstall semua yg diperlukan anda 
+dapat menjalankan program tersebut
+
+
 # System Alur Program Game Kuis Matematika
 
 """ 
@@ -54,3 +68,5 @@ Alur Program :
    filename : ` Main.py `
 
 """
+
+# Selamat Bermain , Salam Python !!!!
