@@ -3,15 +3,25 @@
 """ 
 Alur Program :
 
-1.  user Memilih Tingkat Kesulitan Kuis 
-    { Mudah, Sedang, Sulit }
+1.  `user` Memilih Tingkat Kesulitan Kuis 
+
+    { 
+    
+       Mudah, Sedang, Sulit
+       
+    }
+    
 
 2.  Jumlah Soal Disetiap Tingkat Permainan:
 
+    
     {
+        
         10 Soal ==> tingkat Mudah
         20 Soal ==> tingkat Sedang
         25 Soal ==> tingkat Sulit
+        
+    
     }
 
 2.  kemudian `user` Menjawab Soal Yg Diberikan `Comp` Secara Acak 
