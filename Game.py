@@ -168,7 +168,6 @@ def modeSulit(data):
             print(intSoal,'.Hasil Dari: ', angka4, '*', angka1, '- (', angka2, '+', angka3, ')')
 
         # jawaban user
-        print(soal)
         answer = input('Answer: ')
 
         if int(answer) == soal:
