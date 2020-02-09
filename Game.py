@@ -27,24 +27,26 @@ def modeMudah(data):
         # Soal Mudah ( penjumlahan )
         soal = angka1 + angka2
         # print(soal)
-        print(intSoal,'.Hasil Dari : ', angka1, '+', angka2)
+        print(intSoal,'. Hasil Dari : ', angka1, '+', angka2)
 
-        # Jawaban User
         answer = input('Answer : ')
 
-        if int(answer) == soal:
-            # Skor Jawaban yg Benar
-            jwbnBenar = 10
+        try:
+            if int(answer) == soal:
+                # Skor Jawaban yg Benar
+                jwbnBenar = 10
 
-            currentSkor = currentSkor + jwbnBenar
-            print('\nSkor Saya: ', currentSkor)
-            print('---Jawaban Anda Benar ----\n')
-        
-        elif int(answer) != soal:
-            print('---- Jawaban Anda Salah ---- \n')
+                currentSkor = currentSkor + jwbnBenar
+                print('\nSkor Saya: ', currentSkor)
+                print('---Jawaban Anda Benar ----\n')
             
-        else:
-            print('Jawaban Tidak Dikenali!')
+            elif int(answer) != soal:
+                print('---- Jawaban Anda Salah ---- \n')
+                
+            else:
+                print('Jawaban Tidak Dikenali!')
+        except Exception as err:
+            print(err)
 
     # Total Jumlah Skor yg Diperoleh , 
     # Kategory Tingkat Kemampuan dalam Mengerjakan Soal
@@ -82,35 +84,37 @@ def modeSedang(data):
         
         if listMtk == 1:
             soal = angka1 + angka2
-            print(intSoal,'Hasil Dari: ', angka1 ,'+', angka2)
+            print(intSoal,'. Hasil Dari: ', angka1 ,'+', angka2)
 
         elif listMtk == 2:
             soal = angka1 - angka2
-            print(intSoal,'Hasil Dari: ', angka1 ,'-', angka2)
+            print(intSoal,'. Hasil Dari: ', angka1 ,'-', angka2)
 
-        # jawaban user
-        print(soal)
-        answer = input('Answer: ')
+         # Jawaban User
+        answer = input('Answer : ')
 
-        if int(answer) == soal:
-            # Skor Jawaban yg Benar
-            jwbnBenar = 5
+        try:
+            if int(answer) == soal:
+                # Skor Jawaban yg Benar
+                jwbnBenar = 5
 
-            currentSkor = currentSkor + jwbnBenar
-            print('\nSkor Saya: ', currentSkor)
-            print('---Jawaban Anda Benar ----\n')
-        
-        elif int(answer) != soal:
-            # Skor Jawaban Yg Salah 
-            # Dikurangi
-            jwbnSalah = 3
-
-            currentSkor = currentSkor - jwbnSalah
-            print('\nSkor Saya: ', currentSkor)
-            print('---- Jawaban Anda Salah ---- \n')
+                currentSkor = currentSkor + jwbnBenar
+                print('\nSkor Saya: ', currentSkor)
+                print('---Jawaban Anda Benar ----\n')
             
-        else:
-            print('Jawaban Tidak Dikenali!')
+            elif int(answer) != soal:
+                # Skor Jawaban Yg Salah 
+                # Dikurangi
+                jwbnSalah = 3
+
+                currentSkor = currentSkor - jwbnSalah
+                print('\nSkor Saya: ', currentSkor)
+                print('---- Jawaban Anda Salah ---- \n')
+                
+            else:
+                print('Jawaban Tidak Dikenali!')
+        except Exception as err:
+            print(err)
 
     # Total Jumlah Skor yg Diperoleh , 
     # Kategory Tingkat Kemampuan dalam Mengerjakan Soal
@@ -152,43 +156,47 @@ def modeSulit(data):
 
         if listMtk == 1:
             soal = (angka1 - angka3) * angka4 + angka2
-            print(intSoal,'.Hasil Dari: ', '(', angka1 ,'-', angka3, ') *', angka4, '+', angka2)
+            print(intSoal,'. Hasil Dari: ', '(', angka1 ,'-', angka3, ') *', angka4, '+', angka2)
 
         elif listMtk == 2:
             soal = angka1 - angka2
-            print(intSoal,'.Hasil Dari: ', angka1 ,'-', angka2)
+            print(intSoal,'. Hasil Dari: ', angka1 ,'-', angka2)
 
         elif listMtk == 3:
             soal = angka1 * angka2
-            print(intSoal,'.Hasil Dari: ', angka1 ,'*', angka2)
+            print(intSoal,'. Hasil Dari: ', angka1 ,'*', angka2)
 
         elif listMtk == 4:
             # Soal Operasi Matematika Campuran
             soal = angka4 * angka1 - ( angka2 + angka3 )
-            print(intSoal,'.Hasil Dari: ', angka4, '*', angka1, '- (', angka2, '+', angka3, ')')
+            print(intSoal,'. Hasil Dari: ', angka4, '*', angka1, '- (', angka2, '+', angka3, ')')
 
         # jawaban user
         answer = input('Answer: ')
 
-        if int(answer) == soal:
+        try:
+            if answer == soal:
             # Skor Jawaban yg Benar
-            jwbnBenar = 4
+                jwbnBenar = 4
 
-            currentSkor = currentSkor + jwbnBenar
-            print('\nSkor Saya: ', currentSkor)
-            print('---Jawaban Anda Benar ----\n')
-        
-        elif int(answer) != soal:
-            # Skor Jawaban Yg Salah 
-            # Dikurangi
-            jwbnSalah = 3
-
-            currentSkor = currentSkor - jwbnSalah
-            print('\nSkor Saya: ', currentSkor)
-            print('---- Jawaban Anda Salah ---- \n')
+                currentSkor = currentSkor + jwbnBenar
+                print('\nSkor Saya: ', currentSkor)
+                print('---Jawaban Anda Benar ----\n')
             
-        else:
-            print('Jawaban Tidak Dikenali! \n')
+            elif answer != soal:
+                # Skor Jawaban Yg Salah 
+                # Dikurangi
+                jwbnSalah = 3
+
+                currentSkor = currentSkor - jwbnSalah
+                print('\nSkor Saya: ', currentSkor)
+                print('---- Jawaban Anda Salah ---- \n')
+                
+            else:
+                print('Jawaban Tidak Dikenali! \n')
+        except Exception as err:
+            print(err)
+        
 
 
     # Total Jumlah Skor yg Diperoleh , 

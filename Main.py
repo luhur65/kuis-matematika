@@ -1,5 +1,4 @@
 # System
-
 import Game
 
 # Data Mode Awal Game
@@ -11,8 +10,8 @@ while modeGame != 9:
     print('Siapa Nama Anda??')
     playerName = input()
 
-    print('Selamat Bermain !!'.center(80,'-'))
-    print('-'.center(80,'-'))
+    print('Selamat Bermain !!'.center(80, '-'))
+    print('-'.center(80, '-'))
     print('Silakan Pilih Tingkat Kesulitan Permainan ??')
 
     # Membuat List Mode Game
@@ -22,8 +21,13 @@ while modeGame != 9:
 
     print('9. Keluar')
 
-    # user memilih 
-    modeGame = int(input())
+    try:
+        # user memilih 
+        modeGame = int(input())
+
+    except ValueError:
+        print('Masukkan Angka Saja!!')
+        print('Pilih Hanya Kategori Diatas Saja\n')
     
     if modeGame == 1:
         # User Meminta Mode Mudah
@@ -36,9 +40,5 @@ while modeGame != 9:
     elif modeGame == 3:
         # User Meminta Mode Sulit
         Game.modeSulit(playerName)
-
-    else:
-        print('Mode Yg Anda Pilih Tidak Ada!')
-        print('Pilih Mode Yg Ada! \n')
 
 print('Good Bye!!!')
