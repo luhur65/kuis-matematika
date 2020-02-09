@@ -72,4 +72,7 @@ Alur Program :
 
 """
 
+My Social Media : 
+Facebook : https://free.facebook.com/adiknya.situmorang
+
 # Selamat Bermain , Salam Python !!!!
