@@ -73,6 +73,8 @@ Alur Program :
 """
 
 My Social Media : 
+
 Facebook : https://free.facebook.com/adiknya.situmorang
+Instagram : https://www.instagram.com/dharma_situmorang/
 
 # Selamat Bermain , Salam Python !!!!
