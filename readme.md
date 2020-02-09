@@ -67,8 +67,13 @@ Alur Program :
     Point Total user = 90
     Maka kategori nilai 90 adalah A
     
-5. folder utama 
+5. folder utama
+
    filename : ` Main.py `
+   
+6. folder function 
+
+   filename : ` Game.py `
 
 """
 
