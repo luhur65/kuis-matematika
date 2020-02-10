@@ -42,3 +42,4 @@ while modeGame != 9:
         Game.modeSulit(playerName)
 
 print('Good Bye!!!')
+print('Thanks For Playing See you!!')
