@@ -1,5 +1,6 @@
 # Eksekusi Program
 # Mengimport module/library random
+
 import random
 
 # Mode Game Mudah
